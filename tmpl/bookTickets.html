@@ -1,0 +1,65 @@
+<a data-ng-click="back()" class="btn btn-info pull-right" href="javascript:">Back</a>
+ 
+<div ng-show="food">
+    <h3>{{food.name}}
+    </h3>
+    <span data-ng-repeat="i in getCount(food.rating) track by $index" class="glyphicon glyphicon-star"></span>
+    <hr/>
+    <div class="row">
+       
+        <div class="col-md-4">
+            <h4>Review</h4>
+            <label class="text-justify">
+                <img data-ng-src="{{food.thumb}}" class="bookThumb pull-left">{{food.review}}
+            </label>
+        </div>
+    </div>
+</div>
+
+<div ng-app="app" ng-controller="ContactController">
+    <form class="well">
+        <label>Name</label>
+        <input type="text" name="name" ng-model="newcontact.name" />
+      	<label>Quantity</label>
+		<input type="text" name="qty"   data-ng-model="newcontact.qty"   value="1" required>
+		<label>Reason</label>
+        <input type="text" name="reason" ng-model="newcontact.reason" />
+		
+             <label for="date">Date</label>
+                    <select data-ng-model="newcontact.date"  name="date" id="date" required>
+                        <option>Manday</option>
+                        <option>Tuesday</option>
+                        <option>Wednesday</option>
+						<option>Thursday</option>
+                        <option>Friday</option>
+                        <option>Saturday</option>
+						<option>Sunday</option>
+                    </select>
+        
+		<br/>
+        <input type="hidden" ng-model="newcontact.id" />
+        <input type="button" value="Save" ng-click="saveContact()" class="btn btn-primary" />
+    </form>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Reason</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="contact in contacts">
+                <td>{{ contact.name }}</td>
+                <td>{{ contact.qty }}</td>
+                <td>{{ contact.reason }}</td>
+				<td>{{ contact.date }}</td>
+                <td> <a href="javascript:void(0)" ng-click="edit(contact.id)">edit</a> | <a href="javascript:void(0)" ng-click="delete(contact.id)">delete</a>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	 <a ng-href="#/bookings" class="btn btn-success " role="button ">Submit »</a>
+</div>

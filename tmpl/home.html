@@ -1,0 +1,23 @@
+<h2>Food Tracking</h2>
+<input type="text" placeholder="Search" class="form-control" data-ng-model="search">
+ 
+<div class="">
+    <div class="row movies-list">
+        <div class="col-md-4" data-ng-repeat="food in foods | orderBy:'-name':true | filter:search">
+            <h2>{{food.name | uppercase}}</h2>
+            <p>
+                <img data-ng-src="{{food.thumb}}" class="thumb-big">
+            </p>
+            <p>{{food.review | limitTo:99}}...</p>
+            <p>
+               
+                <a ng-href="#/food/{{food.name}} " class="btn btn-success ">Track</a>
+                
+			</p>
+        </div>
+    </div>
+</div>
+
+
+
+

@@ -1,0 +1,76 @@
+[
+        {
+            "id": 0,
+            "name": "Orange",
+            "availability": 9,
+            
+            "thumb": "Images/Orange.jpg"
+		
+        },
+        {
+            "id": 1,
+            "name": "Brocoli",
+            "rating": 5,
+            "availability": 3,
+            
+            "thumb": "Images/Xilanhua.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Onion",
+            "rating": 5,
+            "availability": 5,
+           
+            "thumb": "Images/Onion.jpg"
+        },
+		 {
+            "id": 3,
+            "name": "Banana",
+            "rating": 5,
+            "availability": 5,
+           
+            "thumb": "Images/Banana.jpg"
+        },
+		 {
+            "id": 4,
+            "name": "kiwi",
+            "rating": 5,
+            "availability": 5,
+         
+            "thumb": "Images/Mihoutao.jpg"
+        },
+		 {
+            "id": 5,
+            "name": "Cabbage",
+            "rating": 5,
+            "availability": 5,
+        
+            "thumb": "Images/Cabbage.jpg"
+        },
+		
+		 {
+            "id": 6,
+            "name": "PUMPKIN",
+            "rating": 5,
+            "availability": 5,
+        
+            "thumb": "Images/Nangua.jpg"
+        },
+		
+		 {
+            "id": 7,
+            "name": "Patato",
+            "rating": 5,
+            "availability": 5,
+        
+            "thumb": "Images/Patato.jpg"
+        },
+		  {
+            "id": 8,
+            "name": "Apple",
+            "rating": 5,
+            "availability": 3,
+           
+            "thumb": "Images/Apple.jpg"
+        }
+    ]
